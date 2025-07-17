@@ -2,7 +2,15 @@
 name = "pukeko"
 version = "0.1.0"
 edition = "2024"
-description = "launcher"
+description = "SSH bastion"
 license = "MIT"
 
 [dependencies]
+anyhow = "1.0.98"
+rand_core = { version = "0.6.4", features = [] }
+ratatui = "0.29.0"
+russh = "0.53.0"
+termwiz = "0.23.3"
+tokio = { version = "1.46.1", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
